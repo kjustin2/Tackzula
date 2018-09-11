@@ -14,11 +14,11 @@ class Enemy:
     def get_health(self):
         return self.__health
 
-    def get__damage(self):
+    def get_damage(self):
         return self.__damage
 
-    def change_health(self, change):
+    def minus_health(self, change):
         self.__health = self.__health - change
 
-    def change_damage(self, change):
-        self.__damage = self.__damage - change
+    def plus_damage(self, change):
+        self.__damage = self.__damage + change
